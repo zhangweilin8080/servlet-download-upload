@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--配置第一个servlet-->
+  <servlet>
+    <!--给你的servlet起名字，任意的-->
+    <servlet-name>firstServlet</servlet-name>
+    <!--指明servlet的路径，包名+类名 注意类名后不能加上java-->
+    <servlet-class>com.zwl.backend.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <!--mapping  自然就是映射了  于是乎 这个同上,一致-->
+    <servlet-name>firstServlet</servlet-name>
+    <!--这是浏览器中输入的访问该servlet的url 任意的-->
+    <url-pattern>/servlet/firstServletUrl</url-pattern>
+  </servlet-mapping>
+
+
+  <!--配置第二个servlet-->
+  <servlet>
+    <!--给你的servlet起名字，任意的-->
+    <servlet-name>secondServlet</servlet-name>
+    <!--指明servlet的路径，包名+类名 注意类名后不能加上java-->
+    <servlet-class>com.zwl.backend.servlet.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <!--mapping  自然就是映射了  于是乎 这个同上,一致-->
+    <servlet-name>secondServlet</servlet-name>
+    <!--这是浏览器中输入的访问该servlet的url 任意的-->
+    <url-pattern>/servlet/secondServletUrl</url-pattern>
+  </servlet-mapping>
+
+  <!--配置第三个servlet-->
+  <servlet>
+    <!--给你的servlet起名字，任意的-->
+    <servlet-name>thirdServlet</servlet-name>
+    <!--指明servlet的路径，包名+类名 注意类名后不能加上java-->
+    <servlet-class>com.zwl.backend.servlet.ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <!--mapping  自然就是映射了  于是乎 这个同上,一致-->
+    <servlet-name>thirdServlet</servlet-name>
+    <!--这是浏览器中输入的访问该servlet的url 任意的-->
+    <url-pattern>/servlet/thirdServletUrl</url-pattern>
+  </servlet-mapping>
+
+</web-app>
